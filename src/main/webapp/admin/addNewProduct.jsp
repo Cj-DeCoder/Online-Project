@@ -15,7 +15,7 @@
 		color: white;
 	}
 	#count{
-		color: black;
+		color: yellow;
 	}
 </style>
 </head>

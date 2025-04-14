@@ -38,7 +38,6 @@ public class UserDAO {
 		try {
 			Statement st = getConnection().createStatement();
 			ResultSet result = st.executeQuery("select * from users where email = '"+email+"'and password='"+password+"'");
-			System.out.println(1);
 			return result;
 		} catch (SQLException e) {
 			System.out.println(1);	

@@ -23,7 +23,6 @@ public class IncDecQuantity extends HttpServlet{
 		double price = 0;
 		double total = 0;
 		int quantity = 0;
-		double final_total = 0;
 		
 		try {
 			

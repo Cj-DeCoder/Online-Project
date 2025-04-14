@@ -100,7 +100,7 @@ public class CartDAO {
 		return pst.executeUpdate();
 	}
 	public static ResultSet retriveOrderDetails(String email) throws SQLException {
-		PreparedStatement pst = getConnection().prepareStatement("select * from onlineshopping.cart inner join onlineshopping.products where cart.product_id = products.id and cart.email = ? and cart.orderDate is not NULL order by orderDate desc");
+		PreparedStatement pst = getConnection().prepareStatement("select * from onlineshopping.cart inner join onlineshopping.products on cart.product_id = products.id and cart.email = ? and cart.orderDate is not NULL order by orderDate desc");
 		pst.setString(1, email);
 		return pst.executeQuery();
 	}

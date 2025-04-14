@@ -33,7 +33,7 @@ public class AddToCart extends HttpServlet{
 			}
 			ResultSet rs2 = CartDAO.verifyCart(product_id, email);
 			while(rs2.next()) {
-				cart_total = rs2.getInt(5);
+				cart_total = rs2.getDouble(5);
 				cart_total = cart_total+product_total;
 				quantity = rs2.getInt(3);
 				quantity = quantity +1;

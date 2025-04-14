@@ -17,15 +17,6 @@ public class AddNewProduct extends HttpServlet{
 
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//		int count = UserDAO.productsCount();
-//		if(count>=1) {
-//			req.setAttribute("count", count);
-//			req.getRequestDispatcher("admin/addNewProduct.jsp").forward(req, resp);
-//		}
-//		else {
-//			req.getRequestDispatcher("admin/addNewProduct.jsp?msg=invalid").forward(req, resp);
-//		}
-		System.out.println("123");
 		int id = Integer.parseInt(req.getParameter("id"));
 		String name = req.getParameter("name");
 		String category = req.getParameter("category");
